@@ -1,0 +1,132 @@
+@-ms-viewport {
+	width: device-width;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media all and (min-width: 1200px ) {
+		width: 1080px;
+	}
+
+	@media all and (max-width: 1199px) {
+		width: 960px;
+	}
+
+	@media all and (max-width: 991px) {
+		max-width: 100%;
+	}
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-1 {
+	-ms-flex: 0 0 8.333333%;
+	flex: 0 0 8.333333%;
+	max-width: 8.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-2 {
+	-ms-flex: 0 0 16.666667%;
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-25 {
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 20%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-3 {
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-4 {
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-5 {
+	-ms-flex: 0 0 41.666667%;
+	flex: 0 0 41.666667%;
+	max-width: 41.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-6 {
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-7 {
+	flex: 0 0 58.333333%;
+	max-width: 58.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-8 {
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-9 {
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-10 {
+	flex: 0 0 83.333333%;
+	max-width: 83.333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-11 {
+	flex: 0 0 91.666667%;
+	max-width: 91.666667%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media all and (max-width:991px) {
+	.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}

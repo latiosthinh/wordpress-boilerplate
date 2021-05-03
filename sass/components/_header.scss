@@ -1,0 +1,33 @@
+.site-header {
+	
+}
+
+#nav-control {
+	@media all and (min-width:992px) {
+		display: none;
+	}
+
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	background: none;
+	border: 0;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	z-index: 12;
+
+	span {
+		width: 35px;
+		height: 3px;
+		background: #000;
+		margin: 2px 0;
+	}
+}
+
+.current_page_item, .current-menu-item {
+	a {
+		border-bottom: 3px solid var(--color-accent);
+	}
+}

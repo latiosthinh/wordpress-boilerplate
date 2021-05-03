@@ -1,0 +1,36 @@
+// @font-face {
+// 	font-family: 'LT', sans-serif;
+// 	src: url( '../../fonts/LTUnivers-BasicRegular.ttf' ) format( 'truetype' );
+// 	font-weight: normal;
+// }
+
+// @font-face {
+// 	font-family: 'LT', sans-serif;
+// 	src: url( '../../fonts/LTUnivers-BasicLight.ttf' ) format( 'truetype' );
+// 	font-weight: 300;
+// }
+
+// @font-face {
+// 	font-family: 'LT', sans-serif;
+// 	src: url( '../../fonts/LTUnivers-BasicBold.ttf' ) format( 'truetype' );
+// 	font-weight: 700;
+// }
+
+:root {
+	--font-main : 'LT', sans-serif;
+
+	--color-base   : #999999;
+	--color-black  : #000000;
+	--color-white  : #ffffff;
+	--color-accent : #ED1B2F;
+
+	--animate-duration: 1s;
+	--animate-delay: 1s;
+	--animate-repeat: 1;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
