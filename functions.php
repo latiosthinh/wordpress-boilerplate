@@ -79,6 +79,14 @@ function novus_widgets_init() {
 add_action( 'widgets_init', 'novus_widgets_init' );
 
 function novus_scripts() {
+	// Dequeue
+	wp_deregister_script( 'heartbeat' );
+	wp_deregister_script( 'wp-polyfill' );
+	wp_dequeue_style( 'wp-block-library' );
+	wp_deregister_script( 'jquery' );
+	wp_deregister_script( 'jquery-migrate' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'wc-block-style' );
 	
 	wp_enqueue_style( 'novus-choice', 'https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css', [], NOVUS_VERSION );
 	wp_enqueue_style( 'novus-splide', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css', [], NOVUS_VERSION );
